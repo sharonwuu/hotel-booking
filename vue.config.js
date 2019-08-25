@@ -1,8 +1,6 @@
 
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production'
-    ? 'https://sharonwuu.github.io//hotel-booking/'
-    : '/'
+
   chainWebpack: config => {
     const svgRule = config.module.rule('svg')
 
@@ -21,6 +19,9 @@ module.exports = {
         `
       }
     }
-  }
+  },
+    publicPath: process.env.NODE_ENV === 'production'
+    ? 'https://sharonwuu.github.io/hotel-booking/'
+    : '/'
 
 }
