@@ -1,0 +1,18 @@
+$fontColor-gray: #6D7278;
+$fontColor-gray-opacity: #C9CCD0; //calender
+
+
+$white: white;
+$black: black;
+
+$gray-light: #F7F7F7; //calenderBG / homeCardButton
+
+$gray-roomInfo: #FFF0F0F0;
+$gray-btn-dark: #FF575757;
+$gray-btn-light: #FFD8D8D8;
+
+@mixin shadow($x, $y, $b, $r, $opacity) {
+  -webkit-box-shadow: $x $y $b $r rgba(0,0,0,$opacity);
+  -moz-box-shadow: $x $y $b $r rgba(0,0,0,$opacity);
+  box-shadow: $x $y $b $r rgba(0,0,0,$opacity);
+}
